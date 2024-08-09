@@ -12,5 +12,7 @@ export default defineConfig({
       enabled: false
     }
   }),
-  integrations: [tailwind(), react()]
+  integrations: [tailwind({
+    applyBaseStyles: false
+  }), react()]
 });
