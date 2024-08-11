@@ -1,9 +1,18 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/home/Header.astro";
+import MainLayout from "../layouts/Layout.astro";
+import Header from "@/components/home/Header";
 import "@/styles/utils.css";
 ---
 
 <MainLayout title="RomelPeralta | Ing. Desarrollo de software">
-  <Header />
+  <div
+    class="flex flex-col items-center justify-center h-screen text-white bg-neutral-900"
+  >
+    <h1 class="text-6xl grid font-bold">
+      <span class="text-3xl">Hola!</span>Soy Romel Peralta.👋
+      <span class="text-2xl mt-4 font-thin"
+        >y soy desarrollador de software</span
+      >
+    </h1>
+  </div>
 </MainLayout>

@@ -1,0 +1,99 @@
+---
+const { title, description, keywords, author, canonicalUrl } = Astro.params;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://www.romelperalta.com/Favicon.png"
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://www.romelperalta.com/Favicon.png"
+    />
+    <title>{title}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="msvalidate.01" content="B28A0B7447B96C72EF94BF486B2BA2AE" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta
+      property="og:image"
+      content="https://romelperalta.com/background.png"
+    />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://romelperalta.com/background.png"
+    />
+
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="">
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Romel Peralta",
+        "jobTitle": "Ing. Desarrollo de software",
+        "url": "https://www.romelperalta.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/romel-g-peralta-780093226",
+          "https://github.com/trunicz",
+          "https://twitter.com/mrtrunix"
+        ],
+        "image": "https://www.romelperalta.com/RomelPeraltaLogo.jpg",
+        "description": "Soy Romel Peralta, Ingeniero en Desarrollo de Software y Lidenr de desarrollo en Choya Tech, especializado en crear soluciones digitales innovadoras. Con una sólida experiencia en diseño web y desarrollo de software, me apasiona transformar ideas en proyectos funcionales y visualmente atractivos. Mi enfoque se basa en la simplicidad, la eficiencia y el profesionalismo, adaptando las últimas tendencias y tecnologías para ofrecer resultados excepcionales.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Choya Tech"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "La Paz",
+          "addressRegion": "Baja California Sur",
+          "addressCountry": "Mexico"
+        },
+        "knowsAbout": [
+          "Tecnología",
+          "Desarrollo Web",
+          "Diseño UI/UX",
+          "SEO",
+          "Otros temas relevantes"
+        ],
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Otros"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Correo electrónico",
+          "email": "mailto:hola@romelperalta.com"
+        }
+      }
+    </script>
+    <slot />
+  </body>
+</html>
