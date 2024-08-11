@@ -1,10 +1,25 @@
 ---
 import MainLayout from "../layouts/Layout.astro";
-import Header from "@/components/home/Header";
 import "@/styles/utils.css";
+
+const title =
+  "Romel Peralta - Ingeniero en Desarrollo de Software - CTO en Choya Tech - Especialista en Diseño Web y Soluciones Digitales";
+const description =
+  "Soy Romel Peralta, Ingeniero en Desarrollo de Software y CTO en Choya Tech. Con una trayectoria en el diseño y desarrollo de soluciones digitales, me especializo en crear experiencias web impactantes y funcionales. Mi enfoque combina las últimas tendencias en tecnología con un diseño elegante y profesional, brindando soluciones personalizadas que cumplen con las necesidades de mis clientes. Apasionado por la innovación y la eficiencia, me dedico a transformar ideas en proyectos exitosos.";
+const keywords =
+  "Ingeniero en desarrollo de software, CTO en Choya.tech, Diseño web profesional, Desarrollo web a medida, Especialista en diseño UI/UX, Soluciones digitales innovadoras, Transformación digital, Experiencias web impactantes, Creación de proyectos web, Consultoría en tecnología, Servicios de desarrollo web, Tendencias en diseño web, Eficiencia en desarrollo de software, Desarrollo de software a medida, Optimización de experiencia de usuario, Interfaces modernas, Desarrollo frontend y backend, Estrategias de diseño digital, Proyectos de innovación tecnológica";
+
+const author = "Romel Peralta";
+const canonicalUrl = "https://www.romelperalta.com";
 ---
 
-<MainLayout title="RomelPeralta | Ing. Desarrollo de software">
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  author={author}
+  canonicalUrl={canonicalUrl}
+>
   <div
     class="flex flex-col items-center justify-center h-screen text-white bg-neutral-900"
   >
